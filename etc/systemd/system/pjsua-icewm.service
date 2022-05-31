@@ -1,0 +1,16 @@
+[Unit]
+Description=PJSUA Window Manager
+Requires=jibri-xorg.service
+After=jibri-xorg.service
+
+[Service]
+User=jibri
+Group=jibri
+Environment=DISPLAY=:1
+ExecStart=/usr/bin/icewm-session --notray --display=:1
+Restart=on-failure
+RestartPreventExitStatus=255
+Type=simple
+
+[Install]
+WantedBy=jibri.service

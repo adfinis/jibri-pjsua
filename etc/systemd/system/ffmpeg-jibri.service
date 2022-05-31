@@ -1,0 +1,15 @@
+[Unit]
+Description=Ffmpeg Process
+After=network.target
+
+[Service]
+User=jibri
+Group=jibri
+PermissionsStartOnly=true
+ExecStart=/usr/local/bin/ffmpeg-jibri.sh
+Restart=always
+RestartPreventExitStatus=255
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
