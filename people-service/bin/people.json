@@ -1,0 +1,12 @@
+[
+    {
+        "id": "address@sip.domain.com",
+        "name": "Some room name",
+        "type": "videosipgw"
+    },
+   {
+       "id": "address2@sip.domain.com",
+       "name": "Some room name2",
+       "type": "videosipgw"
+   }
+ ]
