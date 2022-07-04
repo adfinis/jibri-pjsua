@@ -1,1 +1,0 @@
-# adfinis-people-service
